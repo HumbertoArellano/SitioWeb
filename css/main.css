@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+/* ==================  Body ====================*/
+body{
+    font-family: 'Montserrat',  sans-serif; 
+    overflow-x: hidden;
+}
+
+/* ==================  Menu ====================*/
+#menu li > a{
+    font-size: 18px;
+    font-weight: bold;
+    color: #3f3f3f;
+}
+
+#menu form > button{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* ==================  Slider de imagenes ====================*/
+
+.carousel-inner {
+    max-height: 29rem;
+}
+
+/* ==================  Mapa ====================*/
+.mapa {
+    background: url("../img/Google-Maps.jpeg");
+    width:100%;
+    height: 500px;
+}
+
+/* ==================  Media queries pantalla  ====================
+ Cuando la pantalla llegue a esos pixeles el texto sea de 90%. 
+ Con !important las queries tomaran los estilos en ves de bootstrap.
+*/
+@media ( max-width:768px){
+    #intro, #equipo {
+        width: 90% !important;
+    }
+
+    #equipo p {
+        display: none;
+    }
+
+    .servicio-fila {
+        width:100% !important;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px){
+    .icono-wrap{
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+}
